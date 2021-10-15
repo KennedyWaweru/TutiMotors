@@ -39,14 +39,16 @@
     <link rel="stylesheet" href="css/custom.css">
 	<title>TUTI MOTORS</title>
 	<style>
+
+	@media screen(min-width: 576px){
 		.highlights .card .bg-image{
 			transition: transform .2s;
 		}
 		.highlights .card .card-img-top{
 			background-color: #e3f2fd;
 			width: 100%;
-		    height: 25vw;
-		    object-fit: cover;
+		   height: 25vw;
+		   object-fit: cover;
 		}
 		.highlights .card .bg-image:hover{
 			transform: scale(0.95);
@@ -54,6 +56,9 @@
 		.highlights .card .bg-custom{
 			background-color: #2e3093;
 		}
+
+	}
+		
 	</style>
 </head>
 <body onload="displayYear()">
