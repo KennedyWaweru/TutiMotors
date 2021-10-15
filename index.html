@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Federo&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+    <!-- MDB -->
+   <!--  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+    rel="stylesheet"
+    /> -->
+     <!-- Owl Carousel Stylesheets -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!-- Testimonials -->
+    <link rel="stylesheet" type="text/css" href="css/testimonials.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <!-- Logo Icon -->
+    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/custom.css">
+	<title>TUTI MOTORS</title>
+	<style>
+
+	</style>
+</head>
+<body onload="displayYear()">
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="images/logo.png" alt="" width="40" height="40" class="d-inline-block align-text-bottom">
+				<strong>Tuti Motors</strong>
+				<!-- <span class="navbar-brand mb-0 h1"> --><!-- </span> -->
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item active">
+						<a class="nav-link" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="vehicles.html">Vehicles</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact Us</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav navbar-right">
+					<!-- <li class="nav-item me-3 me-lg-0">
+						<a class="nav-link" href="#" rel="nofollow">
+							<span class="phone">
+								<i class="fas fa-phone-alt fa-lg"></i>
+								+254722828929
+							</span>
+						</a>
+					</li> -->
+					<li class="nav-item me-3 me-lg-0">
+						<a class="nav-link" href="https://www.facebook.com/TutiMotors002/" rel="nofollow" target="_blank">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li class="nav-item me-3 me-lg-0">
+						<a class="nav-link" href="https://www.instagram.com/tutimotors/" href="" rel="nofollow" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main>
+		<!-- Welcome Carousel -->
+		<div id="welcomeCarousel" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-bs-interval="10000">
+					<img src="images/yard.jpg" class="d-block w-100 img-fluid" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5 class="text-primary">TUTI MOTORS</h5>
+						<p class="text-danger">FOR ALL YOUR DRIVING PLEASURE</p>
+					</div>
+				</div>
+				<div class="carousel-item" data-bs-interval="2000">
+					<img src="images/info.jpg" class="d-block w-100 img-fluid" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<div class="d-flex justify-content-center align-items-center h-100">
+							<a role="button" href="vehicles.html" class="btn btn-outline-primary">Shop</a>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="images/outside.jpg" class="d-block w-100 img-fluid" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<div class="d-flex justify-content-center align-items-center h-100">
+							<a role="button" href="cars.html" class="btn btn-outline-primary">Contact</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<!-- End of Welcome Carousel -->
+	<div class="container">
+		<!-- Highlights Section -->
+		<section class="highlights">
+		<h1 class="text-center py-5">Featured</h1>
+		<div class="row">
+				<div class="col-md-4 col-sm-12">
+					<h2 class="text-center p-5">1</h2>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<h2 class="text-center p-5">2</h2>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<h2 class="text-center p-5">3</h2>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<h2 class="text-center p-5">4</h2>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<h2 class="text-center p-5">5</h2>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<h2 class="text-center p-5">6</h2>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<h2 class="text-center p-5">7</h2>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<h2 class="text-center p-5">8</h2>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<h2 class="text-center p-5">9</h2>
+				</div>
+			
+		</div>
+		</section>
+		<!-- End of car Highlights Section -->
+
+		<!-- Services Section -->
+		<section class="services">
+		<h1 class="text-center py-5">Auto Sales Services</h1>
+		<div class="row">
+			
+				<div class="col-md-4 col-sm-12">
+					<!-- <h2 class="text-center">Auto <span class="text-custom">Financing</span></h2> -->
+					<div class="card text-white mb-3" style="background-color:#6cbfc7;">
+						<div class="card-header">
+							<h2 class="text-center">Auto <span class="text-custom">Financing</span></h2>
+						</div>
+						<img src="images/auto_finance.jpg" class="card-img-top img-fluid" alt="Tuti Direct Imports">
+						<div class="card-body">
+							<h5 class="card-title">Asset finance</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<!-- <h2 class="text-center">Direct <span class="text-custom">Imports</span></h2> -->
+					<div class="card text-white mb-3" style="background-color:#00adf1;">
+						<div class="card-header">
+							<h2 class="text-center">Direct <span class="text-custom">Imports</span></h2>
+						</div>
+						<img src="images/import_copy.jpg" class="card-img-top img-fluid" alt="Tuti Direct Imports">
+						<div class="card-body">
+							<h5 class="card-title">Success card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<!-- <h2 class="text-center">Trade <span class="text-custom">In</span></h2> -->
+					<div class="card text-white mb-3" style="background-color:#c80000;">
+						<div class="card-header">
+							<h2 class="text-center">Trade <span class="text-custom">In</span></h2>
+						</div>
+						<img src="images/trade_in.jpg" class="card-img-top img-fluid" alt="Tuti Direct Imports">
+						<div class="card-body">
+							<h5 class="card-title">Info card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		</section>
+		<!-- End of Services Section -->
+		<hr class="my-5">
+		<section class="testimonials">
+		<div class="container">
+			<div class="row">
+				<h3 class="text-center py-5">What Our Customers Say</h3>
+				<div class="col-md-8 mx-auto">
+					
+       <!--  <div class="container">
+          <div class="row justify-content-center bg-warning">
+ -->
+            <!-- <div class="col-md-offset-2 col-md-10"> -->
+               <div class="owl-carousel owl-theme mx-auto">
+				    <div class="item">
+				    	<div class="card mb-3">
+				    		<div class="row g-0">
+				    			<div class="col-md-4">
+				    				<img src="images/customer_1.jpg" class="img-fluid rounded-start" alt="...">
+				    			</div>
+				    			<div class="col-md-8">
+				    				<div class="card-body">
+				    					<h5 class="card-title">Customer 1</h5>
+				    					<p class="card-text">My experience purchasing a car from Tuti Motors was excellent. I worked with the sales manager through the entire purchase. I would highly recommend working with Tuti Motors to purchase your next vehicle.</p>
+				    					<p class="card-text rating-star">
+				    						<i class="fas fa-star"></i>
+				    						<i class="fas fa-star"></i>
+				    						<i class="fas fa-star"></i>
+				    						<i class="fas fa-star"></i>
+				    						<i class="fas fa-star-half" aria-hidden="true"></i>
+				    					</p>
+				    				</div>
+				    			</div>
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="item">
+				    	<div class="card mb-3">
+				    		<div class="row g-0">
+				    			<div class="col-md-4">
+				    				<img src="images/customer_2.jpg" class="img-fluid rounded-start" alt="...">
+				    			</div>
+				    			<div class="col-md-8">
+				    				<div class="card-body">
+				    					<h5 class="card-title">Return Customer</h5>
+				    					<p class="card-text">I have bought two vehicles from them in the past three months. Fantastic vehicles and very fair price in this market. Both vehicles are exactly how described. Thanks for everything Tuti Motors.</p>
+				    					<p class="card-text rating-star">
+				    						<i class="fas fa-star"></i>
+				    						<i class="fas fa-star"></i>
+				    						<i class="fas fa-star"></i>
+				    						<i class="fas fa-star"></i>
+				    						<i class="fas fa-star-half-alt" aria-hidden="true"></i>
+				    					</p>
+				    				</div>
+				    			</div>
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="item">
+				    	<div class="card mb-3">
+				    		<div class="row g-0">
+				    			<div class="col-md-4">
+				    				<img src="images/customer_3.jpg" class="img-fluid rounded-start" alt="...">
+				    			</div>
+				    			<div class="col-md-8">
+				    				<div class="card-body">
+				    					<h5 class="card-title">Customer 3</h5>
+				    					<p class="card-text">I got a great car at a fair price. It was the easiest auto purchase I've ever made at a dealership. I will absolutely buy from them again and I recommend them to everyone. Top notch service and all their vehicles are high quality!</p>
+				    					<p class="card-text">
+				    						<p class="card-text rating-star">
+				    						<i class="fas fa-star"></i>
+				    						<i class="fas fa-star"></i>
+				    						<i class="fas fa-star"></i>
+				    						<i class="fas fa-star"></i>
+				    						<i class="fas fa-star" aria-hidden="true"></i>
+				    					</p>
+				    					</p>
+				    				</div>
+				    			</div>
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="item">
+				    	<div class="card mb-3">
+				    		<div class="row g-0">
+				    			<div class="col-md-4">
+				    				<img src="images/customer_14.jpg" class="img-fluid rounded-start" alt="...">
+				    			</div>
+				    			<div class="col-md-8">
+				    				<div class="card-body">
+				    					<h5 class="card-title">Customer 4</h5>
+				    					<p class="card-text">
+				    						Had a fantastic experience buying my vehicle from Tuti Motors. It was a one-stop shop for all of my questions and made car buying a worry-free experience. I also feel that I got an exceptional value and was offered a high level of customer service. Highly recommend going to Tuti Motors if you're in the market for a new or slightly used vehicle. 
+				    					</p>
+				    					<p class="card-text">
+				    						<p class="card-text rating-star">
+					    						<i class="fas fa-star"></i>
+					    						<i class="fas fa-star"></i>
+					    						<i class="fas fa-star"></i>
+					    						<i class="fas fa-star"></i>
+					    						<i class="fas fa-star" aria-hidden="true"></i>
+				    						</p>
+				    					</p>
+				    				</div>
+				    			</div>
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="item">
+				    	<div class="card mb-3">
+				    		<div class="row g-0">
+				    			<div class="col-md-4">
+				    				<img src="images/customer_5.jpg" class="img-fluid rounded-start" alt="...">
+				    			</div>
+				    			<div class="col-md-8">
+				    				<div class="card-body">
+				    					<h5 class="card-title">Customer 5</h5>
+				    					<p class="card-text">
+				    						It was a pleasure working with Tuti Motors and their staff. Everything went smoothly and I got the best deal for both my trade-in. I have recommended Tuti Motors to everyone I know! I know where to go for my next car purchase. 
+				    					</p>
+				    					<p class="card-text">
+				    						<p class="card-text rating-star">
+					    						<i class="fas fa-star"></i>
+					    						<i class="fas fa-star"></i>
+					    						<i class="fas fa-star"></i>
+					    						<i class="fas fa-star"></i>
+					    						<i class="fas fa-star" aria-hidden="true"></i>
+				    						</p>
+				    					</p>
+				    				</div>
+				    			</div>
+				    		</div>
+				    	</div>
+				    </div>
+				    <!-- <div class="item"><h4>6</h4></div>
+				    <div class="item"><h4>7</h4></div>
+				    <div class="item"><h4>8</h4></div>
+				    <div class="item"><h4>9</h4></div>
+				    <div class="item"><h4>10</h4></div>
+				    <div class="item"><h4>11</h4></div>
+				    <div class="item"><h4>12</h4></div> -->
+				</div>
+          <!-- </div> -->
+       <!--  </div>
+      </div>
+			 -->	
+			</div>
+		</div>
+	</section>
+	</div>
+	<hr class="my-5">
+	<!-- Footer Section -->
+	<section class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4 col-sm-12">
+					<h3 class="text-center py-5">Quick <span class="text-custom">Links</span></h3>
+					<!-- Quick Links -->
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item list-group-item-primary  active"><a href="#">Home</a></li>
+						<li class="list-group-item list-group-item-primary"><a href="cars.html">Cars</a></li>
+						<li class="list-group-item list-group-item-primary"><a href="about.html">About</a></li>
+						<li class="list-group-item list-group-item-primary"><a href="contact.html">Contact</a></li>
+						<!-- <li class="list-group-item"></li> -->
+					</ul>
+					<div class="call-area py-2">
+						<h5 class="text-center py-2">Office Hours</h5>
+						<p><i class="fas fa-clock" aria-hidden="true"></i> &nbsp; <b>Monday - Friday: </b> 08:30AM - 06:00PM</p>
+						<p><i class="fas fa-clock" aria-hidden="true"></i> &nbsp; <b>Saturday - Sunday: </b> 09:30AM - 04:00PM</p>
+					</div>
+					<div class="logo-area py-2">
+						<img src="images/logo.png" alt="Tuti Motors Logo" class="img-fluid rounded mx-auto d-block">
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<h3 class="text-center py-5">Visit <span class="text-custom">Us</span></h3>
+					<div class="map-area">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d127646.71976840099!2d36.769787786559455!3d-1.1884896122397408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x182f3dd9b1c3b457%3A0x57fa2cb6a02165a3!2stuti%20motors!3m2!1d-1.1884905!2d36.8398284!5e0!3m2!1sen!2ske!4v1634028015403!5m2!1sen!2ske" width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+					<!-- Map Area -->
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<h3 class="text-center py-5">Contact <span class="text-custom">Info</span></h3>
+					<!-- Contacts & Social Media -->
+					<div class="call-area text-center">
+                        <h5>Call Us</h5>
+                        <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> &nbsp; +254-723456852</p>
+                        <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> &nbsp; +254-721888439</p>
+                    </div>
+                    <div class="call-area text-center">
+                        <h5>Email</h5>
+                        <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> &nbsp; info@tutimotors.co.ke</p>
+                        <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> &nbsp; tutimotors@gmail.com</p>
+                        <!-- <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> &nbsp; </p> -->
+                    </div>
+                    <div class="call-area text-center">
+                        <h5>Yard</h5>
+                        <p><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> &nbsp;  Next to Total Petrol Station Edenville,<br> Kiambu Road, <br> Near KIST.</p>
+                       <!--  <p><i class="fa fa-address-book fa-lg" aria-hidden="true"></i> &nbsp; PQ4X+338, Nairobi</p> -->
+                        <!-- <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> &nbsp; </p> -->
+                    </div>
+				</div>
+			</div>
+			<!-- Copyright Section -->
+			<div class="copyright-area">
+				<p class="d-flex justify-content-center align-items-center h-100 my-0">Copyright &nbsp; &nbsp;
+					<span>
+						<i class="fas fa-copyright fa-lg"></i>
+					</span>
+					&nbsp; &nbsp;
+					<a href="#" class="text-primary">Tuti Motors Ltd</a>
+					&nbsp; &nbsp;
+					&nbsp;<span id="copyright-text"></span>
+				</p>
+			</div>
+			<!-- End of copyright section -->
+		</div>
+	</section>
+	</main>
+	<!-- End of Footer section -->
+	<script>
+		function displayYear(){
+			const d = new Date();
+			document.getElementById('copyright-text').innerHTML = d.getFullYear();
+		}
+	</script>
+	<!--  Bootstrap Js + Popper Js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	<!-- Owl Carousel JS -->
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/testimonials.js"></script>
+</body>
+</html>
